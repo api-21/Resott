@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "41923880863",
+    "project_id": "resott-f1a47",
+    "storage_bucket": "resott-f1a47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41923880863:android:079afad7e1b28784cabfaa",
+        "android_client_info": {
+          "package_name": "com.taknikinigga.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41923880863-ecgj51eh5qu4tvq57jmrtt7j281drc2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZooIHxMahvgbcZX1Emehhr-c3rWGzblk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41923880863-ecgj51eh5qu4tvq57jmrtt7j281drc2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41923880863:android:1c6832e163f3d21acabfaa",
+        "android_client_info": {
+          "package_name": "com.taknikinigga.resott"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41923880863-ecgj51eh5qu4tvq57jmrtt7j281drc2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZooIHxMahvgbcZX1Emehhr-c3rWGzblk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41923880863-ecgj51eh5qu4tvq57jmrtt7j281drc2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

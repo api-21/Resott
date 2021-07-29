@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="p_light_200">#5d6275</color>
+    <color name="primary_500">#ff6d00</color>
+    <color name="p_dark_700">#2d2d2d</color>
+    <color name="teal_200">#fc4041</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFffff</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="layout_background_color">#f5f5f5</color>
+    <color name="textColor">#5D6275</color>
+</resources>

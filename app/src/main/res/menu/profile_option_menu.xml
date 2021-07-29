@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/p_terms"
+        android:title="terms &amp; conditions"></item>
+
+    <item
+        android:id="@+id/p_settings"
+        android:title="Settings"></item>
+
+    <item
+        android:id="@+id/p_logout"
+        android:title="Logout"></item>
+
+</menu>

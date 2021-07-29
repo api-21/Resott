@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/p_dark_700"
+    tools:context=".auth.VerifyCode">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tajawal_light"
+        android:gravity="center"
+        android:text="@string/msgOtpVerify"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/firstPinView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Theme.Logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005">
+
+    </TextView>
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:inputType="text"
+        android:padding="@dimen/lytPadding"
+        android:textColor="@color/primary_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/p_light_200"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="5"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.22000003"
+        app:lineColor="@color/primary_500"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstPinView">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/primary_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerifyOtp"></View>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
