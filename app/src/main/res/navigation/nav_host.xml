@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mobileAuthenticationFragment"
-        android:name="com.taknikinigga.myapplication.auth.MobileAuthFragment"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Authentication.MobileAuthFragment"
         android:label="Login"
         tools:layout="@layout/mobile_auth_layout">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/verifyCodeFragment"
-        android:name="com.taknikinigga.myapplication.auth.VerifyCode"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Authentication.VerifyCode"
         android:label="Verification"
         tools:layout="@layout/verification_layout" />
 </navigation>

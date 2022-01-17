@@ -12,25 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:padding="14dp"
+        android:fontFamily="@font/tajawal_bold"
         android:layout_marginLeft="@dimen/lytPadding"
-        android:visibility="visible"
+        android:visibility="gone"
         android:textStyle="bold" />
-
-
-    <androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="0dp"
-        app:cardBackgroundColor="@android:color/transparent"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/group_recycler_view"
             android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
             android:layout_height="wrap_content" />
-
-    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

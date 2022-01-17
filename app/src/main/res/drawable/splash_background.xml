@@ -4,7 +4,7 @@
     <item android:drawable="@color/p_dark_700"></item>
 
     <item>
-        <bitmap android:src="@drawable/resott"
+        <bitmap android:src="@drawable/logo"
             android:gravity="center"></bitmap>
     </item>
 

@@ -6,6 +6,15 @@
     <string name="nav_search">Search</string>
     <string name="nav_filter">Filter</string>
     <string name="nav_profile">Profile</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addToCard">Cart</string>
+    <string name="wlcmeMsg">Welcome to Resott</string>
+
+
+    <string-array name="foodCategory">
+        <item>Pizza</item>
+        <item>Pasta</item>
+        <item>Deserts</item>
+        <item>Drink</item>
+    </string-array>
 </resources>

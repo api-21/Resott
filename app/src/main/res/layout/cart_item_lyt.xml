@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/cItemImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chocolate" />
+
+        <TextView
+            android:id="@+id/cItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/tajawal_bold"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/cItemPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cItemCount"
+            app:layout_constraintStart_toEndOf="@+id/cItemImg"
+            app:layout_constraintTop_toTopOf="@+id/cItemImg" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/cItemPrice"
+            app:layout_constraintEnd_toStartOf="@+id/cItemCount"
+            app:layout_constraintStart_toStartOf="@+id/cItemName"
+            app:layout_constraintTop_toBottomOf="@+id/cItemName"></View>
+
+        <TextView
+            android:id="@+id/cItemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal_light"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/cItemImg"
+            app:layout_constraintEnd_toEndOf="@+id/cItemName"
+            app:layout_constraintStart_toStartOf="@+id/cItemName"
+            app:layout_constraintTop_toBottomOf="@+id/cItemName" />
+
+        <TextView
+            android:id="@+id/cItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:fontFamily="@font/tajawal_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cItemPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cItemName" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabCustomSize="30dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/cItemImg"
+            app:layout_constraintEnd_toEndOf="@+id/cItemImg"
+            app:layout_constraintStart_toEndOf="@+id/cItemImg"
+            app:layout_constraintTop_toBottomOf="@+id/cItemImg"
+            app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

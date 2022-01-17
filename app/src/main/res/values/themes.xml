@@ -31,9 +31,7 @@
 
     </style>
 
-
     //Fonts Styles
-
     <style name="Theme.TextStyleBold" parent="Widget.AppCompat.TextView">
         <item name="fontFamily">@font/tajawal_black</item>
         <item name="android:textSize">16dp</item>

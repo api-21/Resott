@@ -7,16 +7,25 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.taknikinigga.myapplication.fragments.HomeFragment"
-        android:label="Home"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.HomeFragment"
+        android:label="Resott"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment2_to_search"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cart"
+            app:destination="@id/navCart" />
+        <action
+            android:id="@+id/action_homeFragment_to_seeAll"
+            app:destination="@id/seeAll" />
+        <action
+            android:id="@+id/action_homeFragment_to_cart2"
+            app:destination="@id/navCart" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.taknikinigga.myapplication.fragments.Search"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.Search"
         android:label="Search"
         tools:layout="@layout/search_fragment">
         <action
@@ -32,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/filterFragment"
-        android:name="com.taknikinigga.myapplication.fragments.Filter"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.Filter"
         android:label="Filter"
         tools:layout="@layout/filter_fragment">
         <action
@@ -41,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.taknikinigga.myapplication.fragments.Profile"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.Profile"
         android:label="Profile"
         tools:layout="@layout/profile_fragment" >
         <argument
@@ -58,5 +67,32 @@
             android:name="p_number"
             app:argType="long"
             android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeOrder"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.PlaceOrder"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_place_cart" >
+        <action
+            android:id="@+id/action_placeOrder_to_navCart"
+            app:destination="@id/navCart" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeAll"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.SeeAll"
+        android:label="All Categories"
+        tools:layout="@layout/fragment_see_all">
+        <action
+            android:id="@+id/action_seeAll_to_placeOrder"
+            app:destination="@id/placeOrder" />
+    </fragment>
+    <fragment
+        android:id="@+id/navCart"
+        android:name="com.taknikinigga.resotts.Ui.Fragments.Home.Cart.Cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <argument
+            android:name="cart_item"
+            app:argType="com.taknikinigga.resotts.Networking.room.ItemCart" />
     </fragment>
 </navigation>
